@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+.myLogo {
+  width: 50px;
+}
+header {
+  background-color: #86608e;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+  
+}
+.heroImg {
+  background-color: #b2ffff;
+  padding: 100px 15px;
+  
+}
+
+
+.content:nth-child(1) {
+  filter: drop-shadow(#86608e 3rem 3rem 10px);
+}
+
+
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #ff7518;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX Skills Section */
+
+.flexContainer {
+  display: flex;
+  width: 33%;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+.babyContainer {
+  padding: 70px;
+}
+
+.babyContainer img {
+  width: 200px;
+  height: 200px
+}
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  background-color: #b2ffff;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 80px;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #0bda51;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #86608e;
+  width: 90%; 
+}
+
+.close {
+  color: #6b4421;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #86608e;
+  text-decoration: none;
+  cursor: pointer;
+}
